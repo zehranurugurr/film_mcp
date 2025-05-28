@@ -1,7 +1,7 @@
 import requests
 
 def get_ghibli_films():
-    api_url = "https://ghibliapi.herokuapp.com/films"
+    api_url = "https://ghibliapi.vercel.app/films"
     try:
         response = requests.get(api_url, timeout=10)
         response.raise_for_status()
